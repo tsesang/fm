@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    width: 65%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:20px;
+}
+
+.container>div{
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    background-color: hsl(246, 80%, 60%);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.profile>.personal_details{
+    grid-row: 1/3;
+    background-color: ;
+}
+
+.profile>.duration{
+    grid-row: 3/-1;
+}
+
+.work{
+    grid-column: 2/3;
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+
+}
+
+.play{
+    grid-column: 3/4;
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+
+}
+
+.study{
+    grid-column: 4/-1;
+    background-color: rgb(202, 61, 61);
+    background-image: url(./images/icon-study.svg);
+
+}
+
+.exercise{
+    grid-column: 2/3;
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+
+}
+.social{
+    grid-column: 3/4;
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+
+}
+.self-care{
+    grid-column: 4/-1;
+    background-color:  hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+.inner-container{
+    position: relative;
+    background-color: hsl(235, 46%, 20%);
+    top:50px;
+    width: 100%;
+    height: 83%;
+    border-radius: 10px;
+    color:white;
+    padding:1.5rem;
+}
+
+.inner-container>div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.inner-container>h1{
+    font-weight: 300;
+    font-size: 4rem;
+}
+
+.inner-container>p{
+    font-weight: 100;
+    opacity: .8;
+    font-size: .9rem;
+}
